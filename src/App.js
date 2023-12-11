@@ -65,23 +65,17 @@ function App() {
         <Route path="/catering" element={<div>At the moment the only way to schedule for catering is emailing ('the email is going to be here') or you can call or text (phone number here) you can also reach out to us on our social media</div>} />
         <Route path="/menu" element={
           <div>
-            <h1>Menu</h1>
-              <div className='meats'>
-                <h2>Meats</h2>
-                  <p>Carne Asada</p>
-                  <p>Chorizo</p>
-                  <p>Pollo</p>
-                  <p>Pastor</p>
-                  <p>Cabeza</p>
-                  <p>Birria (only on weekends)</p>
+              <div className='proteins'>
+                <h2>Proteins</h2>
+                  <p>Carne Asada,Chorizo,Pollo,Pastor,Cabeza</p>
               </div>
               <div className='foodOptions'>
-                <h2>Entree</h2>
+                <h2>Entrees</h2>
                 <p>Tacos</p>
                 <p>Tortas</p>
                 <p>Burritos</p>
                 <p>Quesadillas</p>
-                <p>Quesabirrias</p>
+                <p>Quesabirrias(only on weekends)</p>
               </div>
               <div className='drinks'>
                 <h2>Drinks</h2>

@@ -1,5 +1,5 @@
 *{
-  /* border:1px solid grey; */
+  border:1px solid grey;
 }
 body {
   margin: 0;
@@ -14,7 +14,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+/* Hompe Page */
 nav{
   display: flex;
   align-items: center;
@@ -53,6 +53,19 @@ h2{
   justify-content: center;
 
 }
+/* Menu Page */
+.proteins{
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+
+
 footer{
   display: flex;
   justify-content: center;
