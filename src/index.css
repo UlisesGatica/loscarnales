@@ -1,5 +1,5 @@
 *{
-  border:1px solid grey;
+  /* border:1px solid grey; */
 }
 body {
   margin: 0;
@@ -33,6 +33,28 @@ h2{
 .middleHome{
   background-color: white;
   display: flex;
-  
-  
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.middleLeftHome{
+  padding-right: 10%;
+  text-align: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.middleRightHome{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
