@@ -6,9 +6,9 @@ function App() {
     <div className="App">
       <header>
         <nav>
-          <Link to="/">Home</Link>
-          <Link to="/catering">Catering Info</Link>
-          <Link to="/menu">Menu</Link>
+          <Link to="/"style={{ textDecoration: 'none', color:'black' }}>Home</Link>
+          <Link to="/catering"style={{ textDecoration: 'none', color:'black' }}>Catering Info</Link>
+          <Link to="/menu"style={{ textDecoration: 'none', color:'black' }}>Menu</Link>
           <img src="losCarnalesLogoFINAL.jpeg"alt="this is the food truck logo"className="bigLogo"/>
         </nav>
       </header>
