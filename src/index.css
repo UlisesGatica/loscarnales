@@ -22,6 +22,7 @@ nav{
   align-items: baseline;
   justify-content: space-between;
   background-color: white;
+  text-decoration: none;
 }
 
 .bigLogo{

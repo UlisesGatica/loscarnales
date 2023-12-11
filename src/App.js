@@ -18,17 +18,25 @@ function App() {
         element={
           <div>
             <div className='middleHome'>
-              <h2>
-                Located at <br />
-                915 W Red Cliffs Dr, Washington, UT 84780
-                <br />
-                Wednesday through Saturday at 11 am - 6 pm
-              </h2>
-              <p>
-                Get ready for some authentic Mexican food! Established by two brothers
-                who have worked in the restaurant industry for over 20+ years! Follow
-                Carmelo and Floriberto Gatica on this new and exciting venture!!!
-              </p>
+              <div className='middleLeftHome'>
+                <h2>Located at</h2>
+                  <p>915 W Red Cliffs Dr, Washington, UT 84780</p>
+                  <p>
+                    Mon 10am-6pm <br/>
+                    Tue 10am-6pm <br/>
+                    Thu 10am-6pm <br/>
+                    Fri 10am-6pm <br/>
+                    Sat 10am-6pm <br/>
+                  </p>
+              </div>
+              <div className='middleRightHome'>
+                <h2>About Us</h2>
+                <p>
+                  Get ready for some authentic Mexican food! Established by two brothers
+                  who have worked in the restaurant industry for over 20+ years! Follow
+                  Carmelo and Floriberto Gatica on this new and exciting venture!!!
+                </p>
+              </div>
             </div> 
               <a href="https://www.instagram.com/los.carnales_foodtruck/">
                 <img
@@ -65,6 +73,11 @@ function App() {
                 <p>Burritos</p>
                 <p>Quesadillas</p>
                 <p>Quesabirrias</p>
+              </div>
+              <div className='drinks'>
+                <h2>Drinks</h2>
+                <p></p>
+                <p></p>
               </div>
           </div>
         } />
