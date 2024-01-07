@@ -1,4 +1,5 @@
 import { Link, Routes, Route, Outlet } from 'react-router-dom';
+import Catering from './Catering';
 import Menu from './Menu'
 import './index.css';
 
@@ -37,7 +38,7 @@ function App() {
           </div>
         }
       />
-        <Route path="/catering" element={<div>At the moment the only way to schedule for catering is emailing ('the email is going to be here') or you can call or text (phone number here) you can also reach out to us on our social media</div>} />
+       <Route path="/catering/" element={<Catering />} />
         <Route path="/menu" element={<Menu/> } />
        </Routes>
             <footer>
