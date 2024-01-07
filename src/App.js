@@ -1,4 +1,5 @@
 import { Link, Routes, Route, Outlet } from 'react-router-dom';
+import Menu from './Menu'
 import './index.css';
 
 function App() {
@@ -13,9 +14,7 @@ function App() {
         </nav>
       </header>
       <Routes>
-      <Route
-        path="/"
-        element={
+      <Route path="/" element={
           <div>
             <div className='middleHome'>
               <div className='middleLeftHome'>
@@ -35,6 +34,12 @@ function App() {
                 <p>Indulge in a fiesta of flavors at Los Carnales where every dish tells a story steeped in tradition and culinary expertise. Carmelo and Floriberto Gatica's deep-rooted knowledge and dedication to creating an unforgettable dining experience shine through each delectable bite. Join us as we infuse every meal with the rich heritage and vibrant spirit of Mexico, inviting you to savor the true essence of our culture in every meticulously crafted dish.</p>
               </div>
             </div> 
+          </div>
+        }
+      />
+        <Route path="/catering" element={<div>At the moment the only way to schedule for catering is emailing ('the email is going to be here') or you can call or text (phone number here) you can also reach out to us on our social media</div>} />
+        <Route path="/menu" element={<Menu/> } />
+       </Routes>
             <footer>
               <a href="https://www.instagram.com/los.carnales_foodtruck/">
                 <img
@@ -58,34 +63,6 @@ function App() {
                 />
               </a>
              </footer>
-          </div>
-
-        }
-      />
-        <Route path="/catering" element={<div>At the moment the only way to schedule for catering is emailing ('the email is going to be here') or you can call or text (phone number here) you can also reach out to us on our social media</div>} />
-        <Route path="/menu" element={
-          <div>
-              <div className='proteins'>
-                <h2>Proteins</h2>
-                  <p>Carne Asada,Chorizo,Pollo,Pastor,Cabeza</p>
-              </div>
-              <div className='foodOptions'>
-                <h2>Entrees</h2>
-                <p>Tacos</p>
-                <p>Tortas</p>
-                <p>Burritos</p>
-                <p>Quesadillas</p>
-                <p>Quesabirrias(only on weekends)</p>
-              </div>
-              <div className='drinks'>
-                <h2>Drinks</h2>
-                <p></p>
-                <p></p>
-              </div>
-          </div>
-        } />
-      </Routes>
-    
     </div>
   );
 }
