@@ -11,7 +11,7 @@ function App() {
           <Link to="/"style={{ textDecoration: 'none', color:'black' }}>Home</Link>
           <Link to="/catering"style={{ textDecoration: 'none', color:'black' }}>Catering Info</Link>
           <Link to="/menu"style={{ textDecoration: 'none', color:'black' }}>Menu</Link>
-          <img src="losCarnalesLogoFINAL.jpeg"alt="this is the food truck logo"className="bigLogo"/>
+          <img src="https://i.imgur.com/mPHoDIx.jpg"alt="this is the food truck logo"className="bigLogo"/>
         </nav>
       </header>
       <Routes>
@@ -64,6 +64,7 @@ function App() {
                 />
               </a>
              </footer>
+             
     </div>
   );
 }

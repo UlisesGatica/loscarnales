@@ -1,5 +1,6 @@
 *{
   border:1px solid grey;
+  
 }
 body {
   margin: 0;
@@ -54,13 +55,36 @@ h2{
 
 }
 /* Menu Page */
-.proteins{
-  background-color: aqua;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
+/* ... (other styles) */
+
+.midMenu {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
+.proteins h2{
+  text-align: center;
+}
+
+.protein{
+  display: flex;
+}
+
+.drinks h2{
+  text-align: center;
+}
+
+.drink{
+  display: flex;
+ 
+}
+
+
+
+/* ... (other styles) */
 
 
 
