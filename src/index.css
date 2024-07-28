@@ -56,8 +56,7 @@ h2{
 }
 /* Menu Page */
 
-.midMenu {
-  /* background-color: aqua; */
+.topMenu {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -96,18 +95,31 @@ h2{
 .foodOptions img{
   width: 40vh;
 }
+ 
 
-.entreeBox{
+.entreeBox {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  padding-left: 50px;
+  padding-right: 50px;
+  
 }
 
-.entreeBox h3{
+.entreeBox > div {
+  flex: 1 1 calc(50% - 40px); 
+  box-sizing: border-box;
+  margin: 20px;
+}
+
+.entreeBox h3 {
   text-align: center;
 }
 
 .entreeContent {
   display: flex;
-  flex-direction: row; /* Change to 'row' to make them side by side */
+  padding-left: 20px;
+  padding-right: 20px;
   align-items: center;
   justify-content: center;
 }
@@ -122,11 +134,10 @@ h2{
   margin: 10px;
 }
 
-.tacos, .tortas, .burritos, .quesadillias, .quesabirrias{
+.tacos, .tortas, .burritos, .quesadillas, .quesabirrias {
   border: 5px dotted rgb(98, 203, 98);
-  padding-left: 50px;
-  padding-right: 50px;
 }
+
 
 
 footer{
