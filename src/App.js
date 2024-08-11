@@ -7,8 +7,10 @@ function App() {
     <div className="App">
       <header>
         <nav>
+        <div className="linkContainer">
           <Link to="/"style={{ textDecoration: 'none', color:'black' }}>Home</Link>
           <Link to="/menu"style={{ textDecoration: 'none', color:'black' }}>Menu</Link>
+        </div>
           <img src="https://i.imgur.com/mPHoDIx.jpg"alt="this is the food truck logo"className="bigLogo"/>
         </nav>
       </header>

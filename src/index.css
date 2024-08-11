@@ -1,61 +1,92 @@
-*{
-  /* border:1px solid grey; */
-  
-}
-body {
+/* General Styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  /* border:1px solid grey; */
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+@media (max-width: 500px) {
+  *, *::before, *::after {
+    box-sizing: border-box; 
+  }
+
+  body {
+    overflow-x: hidden; 
+  }
 }
-/* Hompe Page */
-nav{
+
+/* Navigation Bar */
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
   font-size: 1.25rem;
   padding-left: 10%;
+  padding-right: 10%;
 }
 
-.bigLogo{
+nav a {
+  margin: 0 33%;
+}
+
+.bigLogo {
   width: 40vh;
+  order: 3;
 }
-h2{
-  background-color: white;
-}
-.middleHome{
-  background-color: white;
+
+/* Home Page */
+.middleHome {
   display: flex;
   padding-left: 5%;
   padding-right: 5%;
 }
-.middleLeftHome{
+
+.middleLeftHome {
+  flex: 1 1 30%;
   padding-right: 10%;
   text-align: center;
-  text-align: center;
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.middleRightHome{
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
+.middleLeftHome h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
+.middleLeftHome a {
+  margin-bottom: 20px; 
 }
+.middleLeftHome p {
+  margin: 20px 0;
+}
+
+.middleRightHome {
+  flex: 1 1 70%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.middleRightHome h2 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.middleRightHome p {
+  text-align: justify;
+  margin: 10px 0;
+}
+
 /* Menu Page */
-
 .topMenu {
   display: flex;
   justify-content: space-around;
@@ -64,56 +95,58 @@ h2{
 }
 
 .proteins,
-.drinks{
+.drinks {
   border: 5px dotted rgb(98, 203, 98);
   padding-left: 25px;
   padding-right: 25px;
 }
 
-.proteins h2{
+.proteins h2 {
   text-align: center;
+  margin: 5px
 }
 
-.protein{
+
+.protein {
   display: flex;
-  
+  margin-bottom: 6px
 }
 
-.drinks h2{
+.drinks h2 {
   text-align: center;
+  margin: 5px
 }
 
-.drink{
+.drink {
   display: flex;
- 
+  margin-bottom: 6px
 }
 
-.foodOptions h2{
+.foodOptions h2 {
   text-align: center;
 }
 
-.foodOptions img{
+.foodOptions img {
   width: 40vh;
 }
- 
 
 .entreeBox {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; 
+  justify-content: space-around;
   padding-left: 50px;
   padding-right: 50px;
-  
 }
 
 .entreeBox > div {
-  flex: 1 1 calc(50% - 40px); 
+  flex: 1 1 calc(50% - 40px);
   box-sizing: border-box;
   margin: 20px;
 }
 
 .entreeBox h3 {
   text-align: center;
+  margin-top: 5px;
 }
 
 .entreeContent {
@@ -122,6 +155,7 @@ h2{
   padding-right: 20px;
   align-items: center;
   justify-content: center;
+  
 }
 
 .entreeContent p {
@@ -138,10 +172,108 @@ h2{
   border: 5px dotted rgb(98, 203, 98);
 }
 
-
-
-footer{
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Mobile Specific Styles */
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .bigLogo {
+    order: 0;
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 10px;
+    order: 1;
+  }
+
+  .linkContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    order: 1;
+  }
+
+  /* Home Page Mobile */
+  .middleHome {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .middleLeftHome {
+    padding-right: 0;
+  }
+
+  .middleLeftHome p {
+    margin: 5px 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .middleLeftHome,
+  .middleRightHome {
+    flex: none;
+    width: 100%;
+  }
+
+  /* Menu Page Mobile */
+  .topMenu {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 0;
+  }
+
+  .proteins,
+  .drinks {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .protein,
+  .drink {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .protein p,
+  .drink p {
+    margin: 5px 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .foodOptions {
+    padding: 0;
+  }
+
+  .entreeBox {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .entreeBox > div {
+    flex: none;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .entreeContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .entreeContent img {
+    width: 100%;
+  }
 }
