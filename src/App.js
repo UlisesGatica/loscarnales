@@ -44,30 +44,34 @@ function App() {
       />
         <Route path="/menu" element={<Menu/> } />
        </Routes>
-            <footer>
-              <a href="https://www.instagram.com/los.carnales_foodtruck/">
-                <img
-                  src="https://1000logos.net/wp-content/uploads/2017/02/Emblem-Instagram-500x500.jpg" 
-                  alt="Instagram"
-                  style={{ width: '25%',height:'25%' }}
-                />
-              </a>
-              <a href="https://www.facebook.com/loscarnales.ut">
-                <img
-                  src="https://logowik.com/content/uploads/images/324_facebookicon.jpg" 
-                  alt="Facebook"
-                  style={{ width: '25%',height:'25%'}}
-                />
-              </a>
-              <a href="https://www.yelp.com/biz/los-carnales-mexican-food-st-george">
-                <img
-                  src="https://logodix.com/logo/83953.png" 
-                  alt="Yelp"
-                  style={{ width: '25%',height:'25%'}}
-                />
-              </a>
-             </footer>
-             
+       <footer style={{
+        display: 'flex',
+        justifyContent: 'flex-end', 
+        alignItems: 'center',
+        padding: '10px 20px',
+      }}>
+  <a href="https://www.instagram.com/los.carnales_foodtruck/">
+    <img
+      src="https://i.imgur.com/yGCxHPk.jpeg"
+      alt="Instagram"
+      style={{ width: '70px', height: '63px', margin: '0 8px', borderRadius: '25%' }}
+    />
+  </a>
+  <a href="https://www.facebook.com/loscarnales.ut">
+    <img
+      src="https://i.imgur.com/CdMjkcs.jpeg"
+      alt="Facebook"
+      style={{ width: '70px', height: '63px', margin: '0 8px', borderRadius: '25%' }}
+    />
+  </a>
+  <a href="https://www.yelp.com/biz/los-carnales-mexican-food-st-george">
+    <img
+      src="https://i.imgur.com/P8hi2TU.jpeg"
+      alt="Yelp"
+      style={{ width: '70px', height: '63px', margin: '0 8px', borderRadius: '25%' }}
+    />
+  </a>
+</footer>
     </div>
   );
 }

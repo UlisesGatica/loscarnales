@@ -39,6 +39,7 @@ nav a {
 .bigLogo {
   width: 40vh;
   order: 3;
+  padding-top: 1%;
 }
 
 /* Home Page */
@@ -46,15 +47,16 @@ nav a {
   display: flex;
   padding-left: 5%;
   padding-right: 5%;
+  padding-top: 1%;
 }
 
 .middleLeftHome {
   flex: 1 1 30%;
-  padding-right: 10%;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: .5%;
 }
 .middleLeftHome h2 {
   margin-top: 20px;
@@ -74,6 +76,7 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: .5%;
 }
 
 .middleRightHome h2 {
@@ -96,14 +99,15 @@ nav a {
 
 .proteins,
 .drinks {
-  border: 5px dotted rgb(98, 203, 98);
+  border: 5px dotted yellowgreen;
   padding-left: 25px;
   padding-right: 25px;
 }
 
 .proteins h2 {
   text-align: center;
-  margin: 5px
+  margin: 5px;
+  color: yellowgreen;
 }
 
 
@@ -114,7 +118,8 @@ nav a {
 
 .drinks h2 {
   text-align: center;
-  margin: 5px
+  margin: 5px;
+  color: yellowgreen;
 }
 
 .drink {
@@ -136,6 +141,10 @@ nav a {
   justify-content: space-around;
   padding-left: 50px;
   padding-right: 50px;
+}
+
+h2,h3{
+  color: yellowgreen;
 }
 
 .entreeBox > div {
@@ -169,13 +178,7 @@ nav a {
 }
 
 .tacos, .tortas, .burritos, .quesadillas, .quesabirrias {
-  border: 5px dotted rgb(98, 203, 98);
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: 5px dotted yellowgreen;
 }
 
 /* Mobile Specific Styles */
@@ -227,6 +230,13 @@ footer {
     width: 100%;
   }
 
+footer a img {
+  width: 50px !important; 
+  height: 43px !important; 
+  margin: 0 8px !important; 
+  border-radius: 25% !important; 
+}
+
   /* Menu Page Mobile */
   .topMenu {
     flex-direction: column;
@@ -238,6 +248,7 @@ footer {
   .drinks {
     width: 100%;
     padding: 10px 0;
+    margin-bottom: 15px;
   }
 
   .protein,
