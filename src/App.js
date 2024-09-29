@@ -35,7 +35,7 @@ function App() {
                 <p>Indulge in a fiesta of flavors at Los Carnales where every dish tells a story steeped in tradition and culinary expertise. Carmelo and Floriberto Gatica's deep-rooted knowledge and dedication to creating an unforgettable dining experience shine through each delectable bite. Join us as we infuse every meal with the rich heritage and vibrant spirit of Mexico, inviting you to savor the true essence of our culture in every meticulously crafted dish.</p>
                 <h2>Catering</h2>
                 <p>
-                For catering information and scheduling please contact us at ('the email is going to be here') or you can call or text (phone number here) you can also reach out to us on our social media
+                For catering information and scheduling please contact us at loscarnalesut@gmail.com or you can call or text (435)-229-4272 or (435)-256-7827 you can also reach out to us on our social media
                 </p>
               </div>
             </div> 
