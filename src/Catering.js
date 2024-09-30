@@ -7,4 +7,4 @@ function Catering() {
     );
 }
 
-export default Catering; // Make sure this line is present
+export default Catering; 
